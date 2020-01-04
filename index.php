@@ -30,7 +30,7 @@
     $host = "clayrisedb.database.windows.net";
     $user = "clayrise";
     $pass = "Sinonnichi19";
-    $db = "clayrisedb";
+    $db = "dicodingdb (clayrisedb/dicodingdb)";
     try {
         $conn = new PDO("sqlsrv:server = $host; Database = $db", $user, $pass);
         $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
