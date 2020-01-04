@@ -27,10 +27,10 @@
        <input type="submit" name="load_data" value="Load Data" />
  </form>
  <?php
-    $host = "clayrisedb.database.windows.net";
+    $host = "tcp:clayrisedb.database.windows.net,1433";
     $user = "clayrise";
     $pass = "Sinonnichi19";
-    $db = "dicodingdb (clayrisedb/dicodingdb)";
+    $db = "dicodingdb";
     try {
         $conn = new PDO("sqlsrv:server = $host; Database = $db", $user, $pass);
         $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
