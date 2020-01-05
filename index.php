@@ -32,7 +32,7 @@
     //$pass = "Sinonnichi19";
     //$db = "dicodingdb";
     try {
-        $conn = new PDO("sqlsrv:server = tcp:clayrisedb.database.windows.net,1433; Database = dicodingdb", "clayrise", "{your_password_here}");
+        $conn = new PDO("sqlsrv:server = tcp:clayrisedb.database.windows.net,1433; Database = dicodingdb", "clayrise", "Sinonnichi19");
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     }
     catch (PDOException $e) {
